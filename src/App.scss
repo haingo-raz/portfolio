@@ -1,0 +1,211 @@
+@import "Mixin.scss";
+
+*{
+  box-sizing: border-box;
+  line-height: 1.5em;
+}
+
+html {
+  font-size: 1vw;
+  //-webkit-text-size-adjust: 100%;
+  //scroll-behavior: smooth;
+}
+
+body, html, section,div, h1, p, a{
+  margin: 0;
+  padding: 0;
+  //white-space: normal;
+}
+
+section {
+  height: 100vh;
+}
+
+#homepage{
+  @include centerVertically;
+}
+
+.title{
+  color: #291b25;
+  font-size: 45px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.social-info{
+  @include centerVertically;
+  height: 100vh;
+  background: #f6f6e9;
+  flex-basis: 50%;
+  padding: 20vh; 
+
+  h1{
+    text-align: center;
+  }
+
+  .container img, .container h1, .container p, .container .social-links{
+    margin: 15px 0;
+  }
+
+  .container img{
+    max-height: 60%;
+    max-width: 60%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .container .social-links{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+  }
+
+  .container .social-links a{
+    color: #291b25;
+    font-size: 25px;
+
+    &:hover{
+      color: #ffce6d;
+    }
+  }
+}
+
+.description{
+  @include centerVertically;
+  flex-direction: column;
+  height: 100vh;
+  background: #61a6ab;
+  flex-basis: 50%;
+  padding: 25vh; //pd
+  text-align: left;
+
+
+  .button-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20vh;
+  }
+
+  .button-section a{
+    width: 40%;
+    @include buttonStyle;
+  }
+}
+
+#portfolio{
+  background: #f6f6e9;
+  padding: 10vh;
+
+  h1{
+    color: #61a6ab;
+  }
+  .projects{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.btn-top{
+  cursor: pointer;
+  color: #ffce6d;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  font-size: 22px;
+}
+
+
+//Responsiveness
+@include mediaXs{
+  .title{
+    font-size: $fontTitleSm;
+  }
+  p, a{
+    font-size: $fontSizeSm;
+  }
+  #homepage{
+    display: block;
+    height: 200vh;
+  }
+  .social-info{
+    flex-basis: 100%;
+    padding: 8px;
+
+    .container .social-links{
+      width: 50%;
+    }
+  }
+  .description{
+    height: 100vh;
+    flex-basis: 100%;
+    padding: 8px
+  }
+  #portfolio{
+    height: 400vh;
+  }
+}
+
+@include mediaSm{
+  .title{
+    font-size: $fontTitleSm;
+  }
+  p, a{
+    font-size: $fontSizeSm;
+  }
+  #homepage{
+    display: block;
+    height: 200vh;
+  }
+  .social-info{
+    width: 100%;
+    padding: 12vh;
+
+    .container .social-links{
+      width: 50%;
+    }
+  }
+  .description{
+    height: 100vh;
+    width: 100%;
+    padding: 12vh;
+  }
+  .projects{
+    gap: 5%;
+  }
+}
+
+@include mediaMd{
+  .title{
+    font-size: $fontTitleMd;
+  }
+  p, a{
+    font-size: $fontSizeMd;
+  }
+  #homepage{
+    display: block;
+    height: 200vh;
+  }
+  .social-info{
+    width: 100%;
+    padding: 15vh;
+
+    .container .social-links{
+      width: 50%;
+    }
+  }
+  .description{
+    height: 100vh;
+    width: 100%;
+    padding: 15vh;
+  }
+  .projects{
+    gap: 5%;
+  }
+}
+
+
+

@@ -1,0 +1,61 @@
+$fontSizeSm: 17px;
+$fontTitleSm: 30px;
+
+$fontSizeMd: 18px;
+$fontTitleMd: 40px;
+
+
+
+@mixin centerVertically{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@mixin buttonStyle{
+    cursor: pointer;
+    background: #291b25;
+    color: #ffce6d;
+    padding: 12px 0px;
+    text-decoration: none; 
+    text-align: center;
+
+    &:hover{
+        background: #ffce6d;
+        color: #291b25;
+    }
+}
+
+@mixin mediaXs{
+    @media screen and (max-width: 480px){
+        @content;
+    }
+}
+
+@mixin mediaSm{
+    @media screen and (min-width: 480.05px) and (max-width: 768px){
+        @content;
+    }
+}
+@mixin mediaMd{
+    @media screen and (min-width: 768.05px) and (max-width: 1024px){
+        @content;
+    }
+}
+
+@mixin mediaLg{
+    @media screen and (min-width: 1366.05px){
+        @content;
+    }
+}
+
+
+
+
+
+
+
+
+
+
