@@ -19,8 +19,8 @@ A simple website to showcase past and current projects.
 # How to run it on your computer
 1. Clone the project using the command ```git clone https://github.com/haingo-raz/portfolio.githttps://github.com/haingo-raz/MyHoliday-Itinerary-Generator.git```
 
-1. Download package and dependemcies ```npm install```
+1. Download package and dependencies ```npm install```
 
-1. Run the project ```npm start```
+1. Run the project with ```npm start```
 
 
