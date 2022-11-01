@@ -1,3 +1,5 @@
+@import "Animations.scss";
+
 $fontSizeSm: 17px;
 $fontTitleSm: 30px;
 
@@ -24,6 +26,7 @@ $fontTitleMd: 40px;
     &:hover{
         background: #ffce6d;
         color: #291b25;
+        animation: gelatine 1s ease-in;
     }
 }
 
