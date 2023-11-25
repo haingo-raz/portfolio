@@ -1,8 +1,14 @@
-import { createTheme } from '@mui/material/styles'
+import { createTheme } from "@mui/material/styles";
 
+const theme = createTheme({
+  typography: {
+    h1: {
+      fontSize: "2.5em",
+    },
+    h2: {
+      fontSize: "2em",
+    },
+  },
+});
 
-const defaultTheme = createTheme()
-const theme = createTheme(defaultTheme, {
-})
-
-export default theme
+export default theme;
