@@ -19,7 +19,9 @@ export const ProjectList = [
     },
     {
         imgPath: '/',
-        name: '/'
+        name: '/',
+        githubLink: '/',
+        demoLink: '/'
     }
 ]
 

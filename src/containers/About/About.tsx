@@ -46,7 +46,7 @@ const About = () => {
       </Grid>
       <Grid item xs={12} lg={6} className="description">
         <Stack spacing={2} className="container" alignItems="center" justifyContent="center">
-          <Typography variant="h1">About me</Typography>
+          <Typography variant="h1">{t("about_title")}</Typography>
           <Typography variant="body1" textAlign="justify">
             {t("about.description")}
           </Typography>
