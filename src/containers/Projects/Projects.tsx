@@ -16,7 +16,7 @@ function Projects() {
   return (
     <Root container spacing={{xs: 4, md: 4, lg: 8}}>  
         { ProjectList.map(project => {
-        return <Grid item xs={6} md={4} lg={3}>
+        return <Grid item xs={12} md={4} lg={3}>
           <ProjectCard imgPath={project.imgPath ?? './imgs/thumbnail/placeholder.png'} name={project.name} githubLink={project.githubLink} demoLink={project.demoLink}/>
         </Grid>
         })}
