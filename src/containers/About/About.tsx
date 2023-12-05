@@ -10,8 +10,8 @@ interface RootProps extends GridProps {}
 
 const Root = styled(Grid)<RootProps>(({ theme }) => ({
   ".social-info": {
-    height: "100vh",
-    background: "#f6f6e9",
+    minHeight: "100vh",
+    background: theme.palette.primary.main
   },
   ".container img": {
     maxHeight: "45%",
@@ -21,10 +21,10 @@ const Root = styled(Grid)<RootProps>(({ theme }) => ({
   },
   ".description": {
     height: "100vh",
-    background: "#61a6ab",
+    background: theme.palette.secondary.main
   },
   ".social-info, .description": {
-    padding: theme.spacing(3),
+    // padding: theme.spacing(2),
   },
 }));
 
@@ -32,8 +32,8 @@ const About = () => {
   const { t } = useTranslation();
   return (
     <Root container>
-      <Grid item xs={12} md={6} className="social-info">
-        <Stack spacing={2} className="container" alignItems="center">
+      <Grid item xs={12} lg={6} className="social-info">
+        <Stack spacing={2} className="container" alignItems="center" justifyContent="center">
           <img src="/imgs/cute.png" alt="avatar" />
           <Typography variant="h1">{t("about.name")}</Typography>
           <Typography variant="h2">{t("about.position")}</Typography>
@@ -44,8 +44,8 @@ const About = () => {
           </Stack>
         </Stack>
       </Grid>
-      <Grid item xs={12} md={6} className="description">
-        <Stack spacing={2} className="container" alignItems="center">
+      <Grid item xs={12} lg={6} className="description">
+        <Stack spacing={2} className="container" alignItems="center" justifyContent="center">
           <Typography variant="h1">About me</Typography>
           <Typography variant="body1" textAlign="justify">
             {t("about.description")}
