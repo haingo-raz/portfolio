@@ -11,7 +11,10 @@ interface RootProps extends GridProps {}
 const Root = styled(Grid)<RootProps>(({ theme }) => ({
   ".social-info": {
     minHeight: "100vh",
-    background: theme.palette.primary.main
+    background: theme.palette.primary.main,
+    [theme.breakpoints.down('sm')]: {
+      padding: `${theme.spacing(1)} ${theme.spacing(2)}`
+    },
   },
   ".container img": {
     maxHeight: "45%",
@@ -21,11 +24,20 @@ const Root = styled(Grid)<RootProps>(({ theme }) => ({
   },
   ".description": {
     height: "100vh",
-    background: theme.palette.secondary.main
+    background: theme.palette.secondary.main,
+    padding: `${theme.spacing(1)} ${theme.spacing(4)}`
   },
   ".social-info, .description": {
-    // padding: theme.spacing(2),
+    boxSizing: 'border-box',
+    display: 'flex', 
+    justifyContent: 'center'
   },
+  '.txt-description': {
+    width: '70%',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%'
+    },
+  }
 }));
 
 const About = () => {
@@ -45,9 +57,9 @@ const About = () => {
         </Stack>
       </Grid>
       <Grid item xs={12} lg={6} className="description">
-        <Stack spacing={2} className="container" alignItems="center" justifyContent="center">
-          <Typography variant="h1">{t("about_title")}</Typography>
-          <Typography variant="body1" textAlign="justify">
+        <Stack spacing={4} className="container" alignItems="center" justifyContent="center">
+          <Typography variant="h1">{t("about.title")}</Typography>
+          <Typography variant="body1" textAlign="justify" className="txt-description">
             {t("about.description")}
           </Typography>
           <Stack direction="row" spacing={4}>

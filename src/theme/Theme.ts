@@ -10,7 +10,7 @@ const buttonTextHoverColor = '#291b25'
 const theme = createTheme({
   typography: {
     h1: {
-      fontSize: "2.5em",
+      fontSize: "2.2em",
     },
     h2: {
       fontSize: "2em",
@@ -21,7 +21,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           textTransform: 'none',
-          padding: '8px 28px',
+          padding: '8px 26px',
         }
       },
       variants: [

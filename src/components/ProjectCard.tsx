@@ -13,15 +13,13 @@ interface ProjectCardProps {
 }
 
 const Root = styled(Card)<CardProps>(({theme}) => ({
-  ".project": {
-
-  },
+  
 }))
 
 const ProjectCard = (props: ProjectCardProps) => {
   const { t } = useTranslation();
   return (
-      <Root className="project">
+      <Root>
           <CardMedia
             sx={{ height: 200 }}
             image={props.imgPath === '/' ? imgPlaceholder : props.imgPath}
