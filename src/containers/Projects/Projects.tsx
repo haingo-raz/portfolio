@@ -23,7 +23,7 @@ const Root = styled(Box)<RootProps>(({ theme }) => ({
 function Projects() {
   const { t } = useTranslation();
   return (
-    <Root>
+    <Root id="projects">
       <Stack spacing={4}>
         <Typography variant="h1" textAlign="center">{t("projects.title")}</Typography>
         <Grid container spacing={{xs: 4, sm:4, md: 4, lg: 6}} className="pj-container"> 

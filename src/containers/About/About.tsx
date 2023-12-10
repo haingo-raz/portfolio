@@ -5,6 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-scroll";
 
 interface RootProps extends GridProps {}
 
@@ -43,7 +44,7 @@ const Root = styled(Grid)<RootProps>(({ theme }) => ({
 const About = () => {
   const { t } = useTranslation();
   return (
-    <Root container>
+    <Root container id="about">
       <Grid item xs={12} lg={6} className="social-info">
         <Stack spacing={2} className="container" alignItems="center" justifyContent="center">
           <img src="/imgs/cute.png" alt="avatar" />
@@ -64,7 +65,7 @@ const About = () => {
           </Typography>
           <Stack direction="row" spacing={4}>
             <Button variant="contained">{t("about.cv")}</Button>
-            <Button variant="contained">{t("about.projects")}</Button>
+            <Button variant="contained"><Link to="projects" smooth={true}>{t("about.projects")}</Link></Button>
           </Stack>
         </Stack>
       </Grid>
