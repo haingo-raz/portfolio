@@ -14,19 +14,20 @@ interface RootProps extends GridProps {}
 
 const Root = styled(Grid)<RootProps>(({ theme }) => ({
   ".btn-top": {
-    cursor: 'pointer',
+    cursor: "pointer",
     color: theme.palette.primary.main,
     background: theme.palette.secondary.main,
-    position: 'fixed',
-    right: '15px',
-    bottom: '15px',
-    borderRadius: '50%',
-    padding: 4
-  }
+    position: "fixed",
+    right: "15px",
+    bottom: "15px",
+    borderRadius: "50%",
+    padding: 4,
+  },
 }));
 
 function App() {
-  const [ isScrollButtonShown, setIsScrollButtonShown ] = useState<boolean>(false);
+  const [isScrollButtonShown, setIsScrollButtonShown] =
+    useState<boolean>(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -44,10 +45,10 @@ function App() {
         <Root item>
           <AppHeader />
           <About />
-          <Projects/>
+          <Projects />
           {isScrollButtonShown && (
             <Link to="about" smooth={true}>
-              <ArrowUpwardIcon className="btn-top"/>
+              <ArrowUpwardIcon className="btn-top" />
             </Link>
           )}
         </Root>
