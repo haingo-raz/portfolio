@@ -14,7 +14,7 @@ const Root = styled(Box)<RootProps>(({ theme }) => ({
   alignItems: "center",
   padding: `${theme.spacing(4)} ${theme.spacing(2)}`,
   boxSizing: "border-box",
-  minHeight: "100vh",
+  // minHeight: "100vh",
   background: theme.palette.primary.main,
   ".pj-container": {
     width: "fit-content",
@@ -39,11 +39,13 @@ function Projects() {
             return (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <ProjectCard
+                  id={project.id}
                   languages={project.languages}
                   imgPath={
                     project.imgPath ?? "./imgs/thumbnail/placeholder.png"
                   }
                   name={project.name}
+                  date={project.date}
                   githubLink={project.githubLink}
                   demoLink={project.demoLink}
                 />

@@ -4,6 +4,7 @@ import { type GridProps } from "@mui/material/Grid";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 
@@ -78,11 +79,12 @@ const About = () => {
             {t("about.description")}
           </Typography>
           <Stack direction="row" spacing={4}>
-            <Button variant="contained">{t("about.cv")}</Button>
             <Button variant="contained">
               <Link to="projects" smooth={true}>
                 {t("about.projects")}
-              </Link>
+              </Link>{" "}
+              &nbsp;
+              <KeyboardDoubleArrowDownIcon />
             </Button>
           </Stack>
         </Stack>
