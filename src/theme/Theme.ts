@@ -15,6 +15,9 @@ const theme = createTheme({
     h2: {
       fontSize: "2em",
     },
+    h5: {
+      fontSize: "1.2em",
+    },
   },
   components: {
     MuiButton: {
@@ -33,6 +36,18 @@ const theme = createTheme({
             "&:hover": {
               background: buttonHoverColor,
               color: buttonTextHoverColor,
+              animation: "gelatine 1s ease-in",
+            },
+          },
+        },
+        {
+          props: { variant: "outlined", color: "primary" },
+          style: {
+            background: buttonHoverColor,
+            color: buttonTextHoverColor,
+            "&:hover": {
+              background: buttonMainColor,
+              color: buttonTextColor,
               animation: "gelatine 1s ease-in",
             },
           },

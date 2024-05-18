@@ -78,7 +78,7 @@ const About = () => {
             {t("about.description")}
           </Typography>
           <Stack direction="row" spacing={4}>
-            <Button variant="contained">{t("about.cv")}</Button>
+            {/* <Button variant="outlined">{t("about.job")}</Button> */}
             <Button variant="contained">
               <Link to="projects" smooth={true}>
                 {t("about.projects")}

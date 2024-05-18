@@ -6,6 +6,7 @@ import {
   CardActions,
   CardMedia,
   Chip,
+  Typography,
 } from "@mui/material";
 import Card, { type CardProps } from "@mui/material/Card";
 import { ImGithub, ImLink } from "react-icons/im";
@@ -28,6 +29,9 @@ const ProjectCard = (props: ProjectCardProps) => {
   const { t } = useTranslation();
   return (
     <Root>
+      <Stack py={1}>
+        <Typography variant="h5">{props.name}</Typography>
+      </Stack>
       <Stack direction="row" spacing={2}>
         {props.languages.map((language) => {
           return <Chip label={language} />;
@@ -40,14 +44,16 @@ const ProjectCard = (props: ProjectCardProps) => {
       />
       <CardActions>
         <Stack justifyContent="space-around" direction="row" width={"100%"}>
-          <Button
-            variant="contained"
-            onClick={() => (window.location.href = props.githubLink ?? "")}
-            disabled={props.githubLink === "/"}
-          >
-            {" "}
-            <ImGithub /> {t("projects.github")}
-          </Button>
+          { props.githubLink === "" ? <></> : 
+            <Button
+              variant="contained"
+              onClick={() => (window.location.href = props.githubLink ?? "")}
+              disabled={props.githubLink === "/"}
+            >
+              {" "}
+              <ImGithub /> {t("projects.github")}
+            </Button>
+          }
           <Button
             variant="contained"
             onClick={() => (window.location.href = props.demoLink ?? "")}
