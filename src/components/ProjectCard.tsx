@@ -10,15 +10,18 @@ import {
 } from "@mui/material";
 import Card, { type CardProps } from "@mui/material/Card";
 import { ImGithub, ImLink } from "react-icons/im";
+import { IoDocumentTextSharp } from "react-icons/io5";
 import { imgPlaceholder } from "../const/ProjectsConst";
 import { useTranslation } from "react-i18next";
 
 interface ProjectCardProps {
+  id: string;
   languages: string[];
   imgPath: string;
   name: string;
   githubLink?: string;
   demoLink?: string;
+  onDialogOpen: (project: any) => void;
 }
 
 const Root = styled(Card)<CardProps>(({ theme }) => ({
@@ -33,8 +36,8 @@ const ProjectCard = (props: ProjectCardProps) => {
         <Typography variant="h5">{props.name}</Typography>
       </Stack>
       <Stack direction="row" spacing={2}>
-        {props.languages.map((language) => {
-          return <Chip label={language} />;
+        {props.languages.map((language, index) => {
+          return <Chip key={index} label={language} />;
         })}
       </Stack>
       <CardMedia
@@ -44,24 +47,30 @@ const ProjectCard = (props: ProjectCardProps) => {
       />
       <CardActions>
         <Stack justifyContent="space-around" direction="row" width={"100%"}>
-          { props.githubLink === "" ? <></> : 
+          { props.githubLink === "/" ? <></> : 
             <Button
               variant="contained"
               onClick={() => (window.location.href = props.githubLink ?? "")}
               disabled={props.githubLink === "/"}
             >
-              {" "}
               <ImGithub /> {t("projects.github")}
             </Button>
           }
-          <Button
-            variant="contained"
-            onClick={() => (window.location.href = props.demoLink ?? "")}
-            disabled={props.demoLink === "/"}
-          >
-            {" "}
-            <ImLink /> {t("projects.demo")}{" "}
-          </Button>
+          { props.demoLink === "/" ?
+            <Button
+              variant="contained"
+              onClick={() => props.onDialogOpen(props.id)}
+            >
+              <IoDocumentTextSharp /> {t("projects.demo")}{" "}
+            </Button>
+            :
+            <Button
+              variant="contained"
+              onClick={() => (window.location.href = props.demoLink ?? "")}
+            >
+              <ImLink /> {t("projects.demo")}{" "}
+            </Button>
+          }
         </Stack>
       </CardActions>
     </Root>

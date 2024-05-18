@@ -1,10 +1,11 @@
 import { Grid, styled, Box, Typography, Stack, Button } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { ProjectList } from "../../const/ProjectsConst";
 import ProjectCard from "../../components/ProjectCard";
 import { type BoxProps } from "@mui/material/Box";
 import { useTranslation } from "react-i18next";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import CustomDialog from "../../components/Dialog";
 
 interface RootProps extends BoxProps {}
 
@@ -24,6 +25,20 @@ const Root = styled(Box)<RootProps>(({ theme }) => ({
 
 function Projects() {
   const { t } = useTranslation();
+
+  const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false);
+  const [currentProject, setCurrentProject] = useState<any>(null);
+
+  const handleDialogOpen = (project: any) => {
+    setCurrentProject(project);
+    setIsDialogOpen(true);
+  };
+
+  const handleDialogClose = () => {
+    setIsDialogOpen(false);
+    setCurrentProject(null);
+  };
+  
   return (
     <Root id="projects">
       <Stack spacing={1} alignItems="center">
@@ -39,6 +54,7 @@ function Projects() {
             return (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <ProjectCard
+                  id={project.id}
                   languages={project.languages}
                   imgPath={
                     project.imgPath ?? "./imgs/thumbnail/placeholder.png"
@@ -46,6 +62,7 @@ function Projects() {
                   name={project.name}
                   githubLink={project.githubLink}
                   demoLink={project.demoLink}
+                  onDialogOpen={() => handleDialogOpen(project)}
                 />
               </Grid>
             );
@@ -65,6 +82,19 @@ function Projects() {
           </Button>
         </Box>
       </Stack>
+      {currentProject && (
+        <CustomDialog
+          isOpen={isDialogOpen}
+          handleClose={handleDialogClose}
+          title={currentProject.name}
+          description={currentProject.description}
+          content={currentProject.content?.map((item: any) => (
+            <div key={item.order}>
+              {item.type === "p" && <p>{item.text}</p>}
+            </div>
+          ))}
+        />
+      )}
     </Root>
   );
 }
