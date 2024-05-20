@@ -26,11 +26,11 @@ const CustomDialog = ({isOpen, handleClose, title, description, content}: ModalP
     >
       <DialogTitle>{title}</DialogTitle>
       <DialogContent>
-        <Box minWidth={500}>
+        <Box minWidth={500} display="flex" flexDirection="column" gap={2}>
           <DialogContentText>
               {description}
           </DialogContentText>
-          <Box>
+          <Box display="flex" flexDirection="column" gap={1}>
             {content}
           </Box>
         </Box>

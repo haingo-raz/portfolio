@@ -6,26 +6,60 @@ export const ProjectList = [
     githubLink: "",
     demoLink: "https://geroba.fr",
     languages: ["ReactJS", "Scss"],
-    description: "GEROBA.FR is a website I have created as part of my internship in Groupe GDS Mauritius",
+    // description: "GEROBA.FR is a website I have created as part of my internship in Groupe GDS Mauritius",
   },
   {
     id: "gerobamaster",
-    imgPath: "/",
+    imgPath: "./imgs/thumbnail/gerobamaster.png",
     name: "GEROBA Master",
     githubLink: "/",
     demoLink: "/",
     languages: ["ReactJS", "MUI", "Redux"],
-    description: "GEROBA Master is the main product of the Groupe GDS company based in France. I was working on this project with a team of developers in Mauritius.",
+    description: "GEROBA Master is the main product of the Groupe GDS company based in France. I was working on this project with a team of developers in Mauritius, France and Martinique.",
     content: [
       { 
         order: 1,
-        type: "p",
-        text: "This is a solution to manage ROAD signs in French countries."
+        type: "title",
+        text: "Detailed project description:"
       },
       { 
         order: 2,
         type: "p",
-        text: "It has multiple features."
+        text: "GEROBA is a web solution that also has a mobile version that works with or without internet connectivity. It is a tool for managing assets, roads, and  buildings. It allows to model data collected in the field on a computer. It helps a company understand its assets, assess them, detect anomalies, and solve them. GEROBA also enables intervention scheduling, planning, and progress tracking, as well as managing stocks."
+      },
+      { 
+        order: 3,
+        type: "title",
+        text: "Technologies used:"
+      },
+      { 
+        order: 4,
+        type: "ul",
+        text: [
+          "ReactJS framework to build user interfaces.", 
+          "MUI for prebuilt components.", 
+          "Redux for state management."
+        ]
+      },
+      { 
+        order: 5,
+        type: "title",
+        text: "Learning outcomes:"
+      },
+      { 
+        order: 6,
+        type: "ul",
+        text: [
+          "I learned how to use git.",
+          "I have improved my skills using ReactJS and Scss.",
+          "I learned about the MUI library.",
+          "I learned about the Open Layers library for dynamic maps.",
+          "I learned about Redux for state management.",
+          "I learned how to communicate with supervisors face-to-face and virtually.",
+          "I learned how to work in a team.",
+          "I learned how to manage my time and meet deadlines.",
+          "I learned how to ask for help when needed.",
+        ]
       },
     ]
   },

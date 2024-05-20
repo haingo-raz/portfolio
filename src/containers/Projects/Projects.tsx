@@ -89,9 +89,16 @@ function Projects() {
           title={currentProject.name}
           description={currentProject.description}
           content={currentProject.content?.map((item: any) => (
-            <div key={item.order}>
-              {item.type === "p" && <p>{item.text}</p>}
-            </div>
+            <Box key={item.order}>
+              {item.type === "p" && <Typography>{item.text}</Typography>}
+              {item.type === "title" && <Typography variant="h2">{item.text}</Typography>}
+              {item.type === "ul" && 
+              <ul>
+                {item.text.map((text: string) => {
+                  return <li>{text}</li>
+                })}
+              </ul>}
+            </Box>
           ))}
         />
       )}
