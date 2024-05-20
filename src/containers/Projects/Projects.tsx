@@ -50,7 +50,7 @@ function Projects() {
           spacing={{ xs: 4, sm: 4, md: 4, lg: 6 }}
           className="pj-container"
         >
-          {ProjectList.map((project, index) => {
+          {ProjectList.filter(project => project.isDisplayed).map((project, index) => {
             return (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <ProjectCard
@@ -91,7 +91,7 @@ function Projects() {
           content={currentProject.content?.map((item: any) => (
             <Box key={item.order}>
               {item.type === "p" && <Typography>{item.text}</Typography>}
-              {item.type === "title" && <Typography variant="h2">{item.text}</Typography>}
+              {item.type === "title" && <Typography variant="h5">{item.text}</Typography>}
               {item.type === "ul" && 
               <ul>
                 {item.text.map((text: string) => {

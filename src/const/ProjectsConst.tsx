@@ -1,15 +1,16 @@
 export const ProjectList = [
   {
     id: "geroba",
+    isDisplayed: true,
     imgPath: "./imgs/thumbnail/geroba.png",
     name: "GEROBA",
     githubLink: "",
     demoLink: "https://geroba.fr",
     languages: ["ReactJS", "Scss"],
-    // description: "GEROBA.FR is a website I have created as part of my internship in Groupe GDS Mauritius",
   },
   {
     id: "gerobamaster",
+    isDisplayed: true,
     imgPath: "./imgs/thumbnail/gerobamaster.png",
     name: "GEROBA Master",
     githubLink: "/",
@@ -65,6 +66,7 @@ export const ProjectList = [
   },
   {
     id: "python-attendance",
+    isDisplayed: true,
     imgPath: "./imgs/thumbnail/attendance.png",
     name: "AWS Python Attendance System",
     githubLink: "https://github.com/haingo-raz/AWS-face-recognition-system",
@@ -74,6 +76,7 @@ export const ProjectList = [
   },
   {
     id: "java-web-scraping",
+    isDisplayed: true,
     imgPath: "/",
     name: "Java Web Scrapping",
     githubLink: "https://github.com/haingo-raz/Java-web-scraping",
@@ -83,6 +86,7 @@ export const ProjectList = [
   },
   {
     id: "java-jewellery-shop",
+    isDisplayed: true,
     imgPath: "/",
     name: "JavaFX Jewellery Shop System",
     githubLink: "https://github.com/haingo-raz/JavaJewelleryShop",
@@ -92,12 +96,23 @@ export const ProjectList = [
   },
   {
     id: "react-visualization",
+    isDisplayed: true,
     imgPath: "./imgs/thumbnail/react-visualization.png",
     name: "AWS Visualization Dashboard",
     githubLink: "https://github.com/haingo-raz/React-AWS-Visualisation-Website",
     demoLink: "/",
     languages: ["AWS", "ReactJS", "Scss", "TypeScript", "Python"],
     description: "This is a real-time visualization dashboard website that I have created using ReactJS and AWS in my final year at Middlesex University Mauritius."
+  },
+  {
+    id: "empty",
+    isDisplayed: false,
+    imgPath: "",
+    name: "",
+    githubLink: "/",
+    demoLink: "/",
+    languages: ["AWS", "ReactJS", "Scss", "TypeScript", "Python"],
+    description: ""
   }
 ];
 
