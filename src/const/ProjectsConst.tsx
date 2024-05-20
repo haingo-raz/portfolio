@@ -73,6 +73,72 @@ export const ProjectList = [
     demoLink: "/",
     languages: ["Python", "AWS", "Scss", "JavaScript"],
     description: "This is a face recognition system I have created using Python Flask and AWS as part of my undergraduate project at Middlesex University Mauritius.",
+    content: [
+      { 
+        order: 1,
+        type: "title",
+        text: "Detailed project description:"
+      },
+      {
+        order: 2,
+        type: "p",
+        text: "This project is a face recognition based attendance system that works with stored/recorded video. It is mostly recommended in a class setting, but it can be used in other places such as an office or a social event. Upon a video upload, the attendance operation will be triggered and the attendance log will be displayed on the front end of the website. Students can be registered and deleted from the system."
+      },
+      { 
+        order: 3,
+        type: "title",
+        text: "Technologies used:"
+      },
+      { 
+        order: 4,
+        type: "ul",
+        text: [
+          "Flask micro web framework for web applications.", 
+          "Sccs to style the web components.", 
+          "JavaScript for added interactivity (forms and tables).",
+          "AWS Rekognition for face recognition.",
+          "AWS DynamoDB for database storage.",
+          "AWS Lambda for serverless computing.",
+          "AWS CloudWatch for monitoring and logging.",
+          "AWS S3 for video storage.",
+        ]
+      },
+      { 
+        order: 5,
+        type: "title",
+        text: "Functionalities:"
+      },
+      { 
+        order: 6,
+        type: "ul",
+        text: [
+          "The admin can log in to the system.",
+          "The admin can register a student.",
+          "The admin can remove a student from the system.",
+          "The admin can upload a video to perform attendance.",
+          "The system can display a list of students.",
+          "The system can display an attendance log"
+        ]
+      },
+      { 
+        order: 7,
+        type: "title",
+        text: "Learning outcomes:"
+      },
+      { 
+        order: 8,
+        type: "ul",
+        text: [
+          "I learned how to set up and use Python Flask.",
+          "I learned how to connect AWS to my Flask application.",
+          "I learned how to use AWS Rekognition for face recognition in a video.",
+          "I learned how to upload a video to AWS S3 from my Flask application.",
+          "I learned how to display items from AWS DynamoDB on the front end.",
+          "I learned how to look for other alternatives when one potential solution is not working.",
+          "I learned how to manage my time properly."
+        ]
+      },
+    ]
   },
   {
     id: "java-web-scraping",
