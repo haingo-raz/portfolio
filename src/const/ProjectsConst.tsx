@@ -16,7 +16,7 @@ export const ProjectList = [
     githubLink: "/",
     demoLink: "/",
     languages: ["ReactJS", "MUI", "Redux"],
-    description: "GEROBA Master is the main product of the Groupe GDS company based in France. I was working on this project with a team of developers in Mauritius, France and Martinique.",
+    description: "GEROBA Master is the main product of the Groupe GDS company based in France. I worked on this project with a team of developers in Mauritius, France, and Martinique.",
     content: [
       { 
         order: 1,
@@ -143,12 +143,74 @@ export const ProjectList = [
   {
     id: "java-web-scraping",
     isDisplayed: true,
-    imgPath: "/",
+    imgPath: "./imgs/thumbnail/web-scrapping.png",
     name: "Java Web Scrapping",
     githubLink: "https://github.com/haingo-raz/Java-web-scraping",
     demoLink: "/",
     languages: ["Java", "JavaScript", "NodeJS", "SQL", "Css"],
-    description: "This is a web scraping project I have created using Java, JavaScript, NodeJS and SQL as part of my undergraduate project at Middlesex University Mauritius."
+    description: "This is a web scraping project I have created using Java, JavaScript, NodeJS and SQL as part of my undergraduate project at Middlesex University Mauritius.",
+    content: [
+      { 
+        order: 1,
+        type: "title",
+        text: "Detailed project description:"
+      },
+      {
+        order: 2,
+        type: "p",
+        text: "This project is a web scraping system that scrapes data from multiple e-ommerce websites using Java, process and store data in a SQL database, and display the data on a website using JavaScript and NodeJS."
+      },
+      { 
+        order: 3,
+        type: "title",
+        text: "Technologies used:"
+      },
+      { 
+        order: 4,
+        type: "ul",
+        text: [
+          "Java JSoup for web scraping.",
+          "Java JUnit for testing.",
+          "Java Threads for parallel processing.",
+          "Java Maven to manage dependencies.",
+          "Java Spring to connect the beans (classes).",
+          "Java Hibernate to map between Java classes and SQL tables.",
+          "HTML, CSS and JavaScript for the front end.",
+          "NodeJS and Express for the back end to handle requests",
+        ]
+      },
+      { 
+        order: 5,
+        type: "title",
+        text: "Functionalities:"
+      },
+      { 
+        order: 6,
+        type: "ul",
+        text: [
+          "Users can search for a laptop.",
+          "Users can click on a laptop to see more details.",
+          "The system can scrap laptops data from multiple e-commerce websites.",
+          "The system can store the scrapped data in a SQL database.",
+          "The system can compare the prices of laptops from different websites.",
+        ]
+      },
+      { 
+        order: 7,
+        type: "title",
+        text: "Learning outcomes:"
+      },
+      { 
+        order: 8,
+        type: "ul",
+        text: [
+          "I learned more about Java's OOP concept.",
+          "I learned about web scrapping and robots.txt.",
+          "I learned how to use Maven and Spring together.",
+          "I learned how to use Hibernate to populate data into a table (database)."
+        ]
+      },
+    ]
   },
   {
     id: "java-jewellery-shop",
