@@ -61,7 +61,7 @@ const ProjectCard = (props: ProjectCardProps) => {
               variant="contained"
               onClick={() => props.onDialogOpen(props.id)}
             >
-              <IoDocumentTextSharp /> {t("projects.demo")}{" "}
+              <IoDocumentTextSharp /> {t("projects.docs")}{" "}
             </Button>
             :
             <Button
