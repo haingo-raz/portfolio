@@ -50,7 +50,7 @@ const ProjectCard = (props: ProjectCardProps) => {
           { props.githubLink === "/" ? <></> : 
             <Button
               variant="contained"
-              onClick={() => (window.location.href = props.githubLink ?? "")}
+              onClick={() => window.open(props.githubLink ?? "", "_blank")}
               disabled={props.githubLink === "/"}
             >
               <ImGithub /> {t("projects.github")}
@@ -66,7 +66,7 @@ const ProjectCard = (props: ProjectCardProps) => {
             :
             <Button
               variant="contained"
-              onClick={() => (window.location.href = props.demoLink ?? "")}
+              onClick={() => window.open(props.demoLink ?? "", "_blank")}
             >
               <ImLink /> {t("projects.demo")}{" "}
             </Button>
