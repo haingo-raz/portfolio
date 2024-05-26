@@ -214,7 +214,7 @@ export const ProjectList = [
   },
   {
     id: "java-jewellery-shop",
-    isDisplayed: true,
+    isDisplayed: false,
     imgPath: "/",
     name: "JavaFX Jewellery Shop System",
     githubLink: "https://github.com/haingo-raz/JavaJewelleryShop",
@@ -230,7 +230,73 @@ export const ProjectList = [
     githubLink: "https://github.com/haingo-raz/React-AWS-Visualisation-Website",
     demoLink: "/",
     languages: ["AWS", "ReactJS", "Scss", "TypeScript", "Python"],
-    description: "This is a real-time visualization dashboard website that I have created using ReactJS and AWS in my final year at Middlesex University Mauritius."
+    description: "This is a real-time visualization dashboard website that I have created using ReactJS and AWS in my final year at Middlesex University Mauritius.",
+    content: [
+      { 
+        order: 1,
+        type: "title",
+        text: "Detailed project description:"
+      },
+      {
+        order: 2,
+        type: "p",
+        text: "This project displays visualizations of historical data, predictions, and sentiment analysis data for five NBA teams: Lakers, Celtics, Warriors, Rockets, and Bulls. The historical data has been collected using the NEWS API (articles) and the balldontlie API (past NBA scores). AWS has been used for making predictions (SageMaker) and performing sentiment analysis (Comprehend). The score predictions were made using the historical scores, while the sentiment analysis was made based on the tone of the articles about each team."
+      },
+      { 
+        order: 3,
+        type: "title",
+        text: "Technologies used:"
+      },
+      { 
+        order: 4,
+        type: "ul",
+        text: [
+          "ReactJS as the frontend framework.",
+          "Scss to style the frontend.",
+          "Recharts as a React chart library",
+          "TypeScript for type safety.",
+          "Python to create a code that splits JSON files into training and test sets.",
+          "News API to download articles for sentiment analysis.",
+          "balldontlie API to download past NBA team scores.",
+          "Amazon DynamoDB as a NoSQL database.",
+          "Amazon SageMaker for machine learning predictions.",
+          "Amazon Comprehend for sentiment analysis operations.",
+          "Amazon S3 as a storage service.",
+          "Amazon Lambda to connect events together.",
+          "Amazon Cloudwatch to monitor other AWS services.",
+          "API Gateway to assign a connection ID to website visitors."
+        ]
+      },
+      { 
+        order: 5,
+        type: "title",
+        text: "Functionalities:"
+      },
+      { 
+        order: 6,
+        type: "ul",
+        text: [
+          "Users can choose a team for which data needs to be displayed.",
+          "The system can display the past NBA scores of each team.",
+          "The system can display the score predictions of each team.",
+          "The system can display the sentiment analysis result of each team from news articles."
+        ]
+      },
+      { 
+        order: 7,
+        type: "title",
+        text: "Learning outcomes:"
+      },
+      { 
+        order: 8,
+        type: "ul",
+        text: [
+          "I learned how to use Amazon DynamoDB, SageMaker, Comprehend, S3, Lambda, Cloudwatch and API Gateway.",
+          "I learned about basic machine learning concepts such as training and test.",
+          "I learned how to use interfaces with TypeScipt."
+        ]
+      },
+    ]
   },
   {
     id: "empty",
