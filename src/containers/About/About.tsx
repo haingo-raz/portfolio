@@ -52,13 +52,29 @@ const About = () => {
           alignItems="center"
           justifyContent="center"
         >
-          <img src="/imgs/cute.png" alt="avatar" />
+          {/* <img src="/imgs/cute.png" alt="avatar" /> */}
           <Typography variant="h1">{t("about.name")}</Typography>
           <Typography variant="h2">{t("about.position")}</Typography>
           <Stack direction="row" spacing={4} className="social-links">
-            <LinkedInIcon />
-            <GitHubIcon />
-            <EmailIcon />
+            <Button
+              variant="text"
+              onClick={() => window.open(`${t("about.linkedin")}`, "_blank")}
+            >
+              <LinkedInIcon />
+            </Button>
+            <Button
+              variant="text"
+              onClick={() => window.open(`${t("about.github")}`, "_blank")}
+            >
+              <GitHubIcon />
+            </Button>
+            <Button
+              variant="text"
+              href={`mailto:${t("about.mailto")}`}
+              target="_blank"
+            >
+              <EmailIcon />
+            </Button>
           </Stack>
         </Stack>
       </Grid>
