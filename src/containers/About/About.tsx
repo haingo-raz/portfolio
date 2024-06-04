@@ -79,11 +79,9 @@ const About = () => {
           </Typography>
           <Stack direction="row" spacing={4}>
             {/* <Button variant="outlined">{t("about.job")}</Button> */}
-            <Button variant="contained">
-              <Link to="projects" smooth={true}>
-                {t("about.projects")}
-              </Link>
-            </Button>
+            <Link to="projects" smooth={true}>
+              <Button variant="contained">{t("about.projects")}</Button>   
+            </Link>
           </Stack>
         </Stack>
       </Grid>

@@ -4,7 +4,7 @@ export const ProjectList = [
     isDisplayed: true,
     imgPath: "./imgs/thumbnail/geroba.png",
     name: "GEROBA",
-    githubLink: "",
+    githubLink: "/",
     demoLink: "https://geroba.fr",
     languages: ["ReactJS", "Scss"],
   },
