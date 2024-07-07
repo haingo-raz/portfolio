@@ -1,73 +1,8 @@
 export const ProjectList = [
   {
-    id: "geroba",
-    isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/geroba.png?token=GHSAT0AAAAAACM2HGXYDYYFGEFDRHKKTGJUZULCTGQ",
-    name: "GEROBA",
-    githubLink: "/",
-    demoLink: "https://geroba.fr",
-    languages: ["ReactJS", "Scss"],
-  },
-  {
-    id: "gerobamaster",
-    isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/gerobamaster.png?token=GHSAT0AAAAAACM2HGXYKS5SKZ7XVBGVQOJGZULCTHQ",
-    name: "GEROBA Master",
-    githubLink: "/",
-    demoLink: "/",
-    languages: ["ReactJS", "MUI", "Redux"],
-    description: "GEROBA Master is the main product of the Groupe GDS company based in France. I worked on this project with a team of developers in Mauritius, France, and Martinique.",
-    content: [
-      { 
-        order: 1,
-        type: "title",
-        text: "Detailed project description:"
-      },
-      { 
-        order: 2,
-        type: "p",
-        text: "GEROBA is a web solution that also has a mobile version that works with or without internet connectivity. It is a tool for managing assets, roads, and  buildings. It allows to model data collected in the field on a computer. It helps a company understand its assets, assess them, detect anomalies, and solve them. GEROBA also enables intervention scheduling, planning, and progress tracking, as well as managing stocks."
-      },
-      { 
-        order: 3,
-        type: "title",
-        text: "Technologies used:"
-      },
-      { 
-        order: 4,
-        type: "ul",
-        text: [
-          "ReactJS framework to build user interfaces.", 
-          "MUI for prebuilt components.", 
-          "Redux for state management."
-        ]
-      },
-      { 
-        order: 5,
-        type: "title",
-        text: "Learning outcomes:"
-      },
-      { 
-        order: 6,
-        type: "ul",
-        text: [
-          "I learned how to use git.",
-          "I have improved my skills using ReactJS and Scss.",
-          "I learned about the MUI library.",
-          "I learned about the Open Layers library for dynamic maps.",
-          "I learned about Redux for state management.",
-          "I learned how to communicate with supervisors face-to-face and virtually.",
-          "I learned how to work in a team.",
-          "I learned how to manage my time and meet deadlines.",
-          "I learned how to ask for help when needed.",
-        ]
-      },
-    ]
-  },
-  {
     id: "python-attendance",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/attendance.png?token=GHSAT0AAAAAACM2HGXYKUMHUVEQGFR2LYOEZULCTDQ",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/attendance.png",
     name: "AWS Python Attendance System",
     githubLink: "https://github.com/haingo-raz/AWS-face-recognition-system",
     demoLink: "/",
@@ -143,7 +78,7 @@ export const ProjectList = [
   {
     id: "java-web-scraping",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/web-scrapping.png?token=GHSAT0AAAAAACM2HGXYDF5R4O6BROT4DFSQZULCTPA",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/web-scrapping.png",
     name: "Java Web Scrapping",
     githubLink: "https://github.com/haingo-raz/Java-web-scraping",
     demoLink: "/",
@@ -225,7 +160,7 @@ export const ProjectList = [
   {
     id: "react-visualization",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/react-visualization.png?token=GHSAT0AAAAAACM2HGXYGXJBNY24W4IAYSJAZULCTNQ",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/react-visualization.png",
     name: "AWS Visualization Dashboard",
     githubLink: "https://github.com/haingo-raz/React-AWS-Visualisation-Website",
     demoLink: "/",
@@ -299,22 +234,152 @@ export const ProjectList = [
     ]
   },
   {
+    id: "portfolio",
+    isDisplayed: true,
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/portfolio.png",
+    name: "Portfolio",
+    githubLink: "/",
+    demoLink: "https://haingo-raz.github.io/portfolio/",
+    languages: ["TypeScript", "ReactJS", "MUI", "Scss"],
+  },
+  {
+    id: "geroba",
+    isDisplayed: true,
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/geroba.png",
+    name: "GEROBA",
+    githubLink: "/",
+    demoLink: "https://geroba.fr",
+    languages: ["ReactJS", "Scss"],
+  },
+  {
+    id: "gerobamaster",
+    isDisplayed: true,
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/gerobamaster.png",
+    name: "GEROBA Master",
+    githubLink: "/",
+    demoLink: "/",
+    languages: ["ReactJS", "MUI", "Redux"],
+    description: "GEROBA Master is the main product of the Groupe GDS company based in France. I worked on this project with a team of developers in Mauritius, France, and Martinique.",
+    content: [
+      { 
+        order: 1,
+        type: "title",
+        text: "Detailed project description:"
+      },
+      { 
+        order: 2,
+        type: "p",
+        text: "GEROBA is a web solution that also has a mobile version that works with or without internet connectivity. It is a tool for managing assets, roads, and  buildings. It allows to model data collected in the field on a computer. It helps a company understand its assets, assess them, detect anomalies, and solve them. GEROBA also enables intervention scheduling, planning, and progress tracking, as well as managing stocks."
+      },
+      { 
+        order: 3,
+        type: "title",
+        text: "Technologies used:"
+      },
+      { 
+        order: 4,
+        type: "ul",
+        text: [
+          "ReactJS framework to build user interfaces.", 
+          "MUI for prebuilt components.", 
+          "Redux for state management."
+        ]
+      },
+      { 
+        order: 5,
+        type: "title",
+        text: "Learning outcomes:"
+      },
+      { 
+        order: 6,
+        type: "ul",
+        text: [
+          "I learned how to use git.",
+          "I have improved my skills using ReactJS and Scss.",
+          "I learned about the MUI library.",
+          "I learned about the Open Layers library for dynamic maps.",
+          "I learned about Redux for state management.",
+          "I learned how to communicate with supervisors face-to-face and virtually.",
+          "I learned how to work in a team.",
+          "I learned how to manage my time and meet deadlines.",
+          "I learned how to ask for help when needed.",
+        ]
+      },
+    ]
+  },
+  {
     id: "react-quiz-app",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/quiz-app.png?token=GHSAT0AAAAAACM2HGXZRTH72JMP7GJRGWRSZULCSEQ",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/quiz-app.png",
     name: "React Quiz App",
     githubLink: "https://github.com/haingo-raz/React-quiz-app",
     demoLink: "https://simple-math-app.netlify.app/",
     languages: ["ReactJS", "Scss"],
   },
   {
-    id: "portfolio",
+    id: "javascript-memory-game",
     isDisplayed: true,
-    imgPath: "/",
-    name: "Portfolio",
-    githubLink: "/",
-    demoLink: "https://haingo-raz.github.io/portfolio/",
-    languages: ["TypeScript", "ReactJS", "MUI", "Scss"],
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/memory-game.png",
+    name: "JS Memory Game",
+    githubLink: "https://github.com/haingo-raz/Javascript-memory-game",
+    demoLink: "/",
+    languages: ["PHP", "JavaScript", "Css", "HTML"],
+    description: "This is a memory game I have created using JavaScript, PHP, HTML and CSS in my second year at Middlesex University.",
+    content: [
+      { 
+        order: 1,
+        type: "title",
+        text: "Detailed project description:"
+      },
+      {
+        order: 2,
+        type: "p",
+        text: "This project is a javascript-based memory card game whereby users can create an account / login (details stored in session storage) or play without an account. Logged in users' high scores are saved in the browser's local storage and displayed."
+      },
+      { 
+        order: 3,
+        type: "title",
+        text: "Technologies used:"
+      },
+      { 
+        order: 4,
+        type: "ul",
+        text: [
+          "HTML/PHP for the front end.",
+          "JavaScript for interactivity.",
+          "CSS for styling.",
+        ]
+      },
+      { 
+        order: 5,
+        type: "title",
+        text: "Functionalities:"
+      },
+      { 
+        order: 6,
+        type: "ul",
+        text: [
+          "Users can create an account.",
+          "Users can log in with their account details.",
+          "Users can play the memory game.",
+          "High scores are saved in the browser's local storage.",
+          "High scores are displayed on the front end."
+        ]
+      },
+      { 
+        order: 7,
+        type: "title",
+        text: "Learning outcomes:"
+      },
+      { 
+        order: 8,
+        type: "ul",
+        text: [
+          "I learned basic interactivity with JavaScript.",
+          "I learned about browser session and local storage.",
+        ]
+      },
+    ]
   },
   {
     id: "empty",
@@ -328,4 +393,4 @@ export const ProjectList = [
   }
 ];
 
-export const imgPlaceholder = "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/placeholder.png?token=GHSAT0AAAAAACM2HGXYU46IJXXKZFKIXP3WZULCTKQ";
+export const imgPlaceholder = "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/placeholder.png";
