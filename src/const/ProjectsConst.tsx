@@ -2,7 +2,7 @@ export const ProjectList = [
   {
     id: "geroba",
     isDisplayed: true,
-    imgPath: "./imgs/thumbnail/geroba.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/geroba.png?token=GHSAT0AAAAAACM2HGXYDYYFGEFDRHKKTGJUZULCTGQ",
     name: "GEROBA",
     githubLink: "/",
     demoLink: "https://geroba.fr",
@@ -11,7 +11,7 @@ export const ProjectList = [
   {
     id: "gerobamaster",
     isDisplayed: true,
-    imgPath: "./imgs/thumbnail/gerobamaster.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/gerobamaster.png?token=GHSAT0AAAAAACM2HGXYKS5SKZ7XVBGVQOJGZULCTHQ",
     name: "GEROBA Master",
     githubLink: "/",
     demoLink: "/",
@@ -67,7 +67,7 @@ export const ProjectList = [
   {
     id: "python-attendance",
     isDisplayed: true,
-    imgPath: "./imgs/thumbnail/attendance.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/attendance.png?token=GHSAT0AAAAAACM2HGXYKUMHUVEQGFR2LYOEZULCTDQ",
     name: "AWS Python Attendance System",
     githubLink: "https://github.com/haingo-raz/AWS-face-recognition-system",
     demoLink: "/",
@@ -143,7 +143,7 @@ export const ProjectList = [
   {
     id: "java-web-scraping",
     isDisplayed: true,
-    imgPath: "./imgs/thumbnail/web-scrapping.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/web-scrapping.png?token=GHSAT0AAAAAACM2HGXYDF5R4O6BROT4DFSQZULCTPA",
     name: "Java Web Scrapping",
     githubLink: "https://github.com/haingo-raz/Java-web-scraping",
     demoLink: "/",
@@ -225,7 +225,7 @@ export const ProjectList = [
   {
     id: "react-visualization",
     isDisplayed: true,
-    imgPath: "./imgs/thumbnail/react-visualization.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/react-visualization.png?token=GHSAT0AAAAAACM2HGXYGXJBNY24W4IAYSJAZULCTNQ",
     name: "AWS Visualization Dashboard",
     githubLink: "https://github.com/haingo-raz/React-AWS-Visualisation-Website",
     demoLink: "/",
@@ -301,11 +301,20 @@ export const ProjectList = [
   {
     id: "react-quiz-app",
     isDisplayed: true,
-    imgPath: "./imgs/thumbnail/quiz-app.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/quiz-app.png?token=GHSAT0AAAAAACM2HGXZRTH72JMP7GJRGWRSZULCSEQ",
     name: "React Quiz App",
     githubLink: "https://github.com/haingo-raz/React-quiz-app",
     demoLink: "https://simple-math-app.netlify.app/",
     languages: ["ReactJS", "Scss"],
+  },
+  {
+    id: "portfolio",
+    isDisplayed: true,
+    imgPath: "/",
+    name: "Portfolio",
+    githubLink: "/",
+    demoLink: "https://haingo-raz.github.io/portfolio/",
+    languages: ["TypeScript", "ReactJS", "MUI", "Scss"],
   },
   {
     id: "empty",
@@ -319,4 +328,4 @@ export const ProjectList = [
   }
 ];
 
-export const imgPlaceholder = "/imgs/thumbnail/placeholder.png";
+export const imgPlaceholder = "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/placeholder.png?token=GHSAT0AAAAAACM2HGXYU46IJXXKZFKIXP3WZULCTKQ";
