@@ -299,6 +299,15 @@ export const ProjectList = [
     ]
   },
   {
+    id: "react-quiz-app",
+    isDisplayed: true,
+    imgPath: "./imgs/thumbnail/quiz-app.png",
+    name: "React Quiz App",
+    githubLink: "https://github.com/haingo-raz/React-quiz-app",
+    demoLink: "https://simple-math-app.netlify.app/",
+    languages: ["ReactJS", "Scss"],
+  },
+  {
     id: "empty",
     isDisplayed: false,
     imgPath: "",
