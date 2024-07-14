@@ -35,7 +35,7 @@ const ProjectCard = (props: ProjectCardProps) => {
       <Stack py={1}>
         <Typography variant="h5">{props.name}</Typography>
       </Stack>
-      <Stack direction="row" spacing={2}>
+      <Stack direction="row" spacing={2} sx={{ overflowX: "auto" }}>
         {props.languages.map((language, index) => {
           return <Chip key={index} label={language} />;
         })}

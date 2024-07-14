@@ -382,6 +382,72 @@ export const ProjectList = [
     ]
   },
   {
+    id: "data-scientist-salary-prediction",
+    isDisplayed: true,
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/data-scientist-prediction.png",
+    name: "Data Scientist Salary Prediction",
+    githubLink: "https://github.com/haingo-raz/Data-Scientist-Salary-Prediction",
+    demoLink: "/",
+    languages: ["Python", "Flask", "Scikit-learn", "AutoGluon", "Pandas", "Matplotlib"],
+    content: [
+      { 
+        order: 1,
+        type: "title",
+        text: "Detailed project description:"
+      },
+      {
+        order: 2,
+        type: "p",
+        text: "This project aims to create a machine learning model that predicts a data science practitioner salary based on their job title, experience level, employment type, remote ratio, company size and company location."
+      },
+      { 
+        order: 3,
+        type: "title",
+        text: "Technologies used:"
+      },
+      { 
+        order: 4,
+        type: "ul",
+        text: [
+          "HTML and CSS for the front end.",
+          "Python Flask for the backend.",
+          "Scikit-learn for machine learning.",
+          "AutoGluon for automated machine learning.",
+          "Pandas for data manipulation.",
+          "Matplotlib for data visualization.",
+        ]
+      },
+      { 
+        order: 5,
+        type: "title",
+        text: "Functionalities:"
+      },
+      { 
+        order: 6,
+        type: "ul",
+        text: [
+          "Users can log in to the system.",
+          "Users can input their job title, experience level, employment type, remote ratio, company size and company location.",
+          "The system can predict the salary of the user based on the input.",
+        ]
+      },
+      { 
+        order: 7,
+        type: "title",
+        text: "Learning outcomes:"
+      },
+      { 
+        order: 8,
+        type: "ul",
+        text: [
+          "I learned how to deploy a Flask application on Azure App Service.",
+          "I improved my data preprocessing skills.",
+          "I explored AutoGluon for automated machine learning.",
+        ]
+      },
+    ]
+  },
+  {
     id: "empty",
     isDisplayed: false,
     imgPath: "",
