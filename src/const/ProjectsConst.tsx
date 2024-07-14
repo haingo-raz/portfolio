@@ -2,7 +2,7 @@ export const ProjectList = [
   {
     id: "python-attendance",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/attendance.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/attendance.png",
     name: "AWS Python Attendance System",
     githubLink: "https://github.com/haingo-raz/AWS-face-recognition-system",
     demoLink: "/",
@@ -78,7 +78,7 @@ export const ProjectList = [
   {
     id: "java-web-scraping",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/web-scrapping.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/web-scrapping.png",
     name: "Java Web Scrapping",
     githubLink: "https://github.com/haingo-raz/Java-web-scraping",
     demoLink: "/",
@@ -160,7 +160,7 @@ export const ProjectList = [
   {
     id: "react-visualization",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/react-visualization.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/react-visualization.png",
     name: "AWS Visualization Dashboard",
     githubLink: "https://github.com/haingo-raz/React-AWS-Visualisation-Website",
     demoLink: "/",
@@ -236,7 +236,7 @@ export const ProjectList = [
   {
     id: "portfolio",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/portfolio.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/portfolio.png",
     name: "Portfolio",
     githubLink: "/",
     demoLink: "https://haingo-raz.github.io/portfolio/",
@@ -245,7 +245,7 @@ export const ProjectList = [
   {
     id: "geroba",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/geroba.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/geroba.png",
     name: "GEROBA",
     githubLink: "/",
     demoLink: "https://geroba.fr",
@@ -254,7 +254,7 @@ export const ProjectList = [
   {
     id: "gerobamaster",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/gerobamaster.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/gerobamaster.png",
     name: "GEROBA Master",
     githubLink: "/",
     demoLink: "/",
@@ -310,7 +310,7 @@ export const ProjectList = [
   {
     id: "react-quiz-app",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/quiz-app.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/quiz-app.png",
     name: "React Quiz App",
     githubLink: "https://github.com/haingo-raz/React-quiz-app",
     demoLink: "https://simple-math-app.netlify.app/",
@@ -319,7 +319,7 @@ export const ProjectList = [
   {
     id: "javascript-memory-game",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/memory-game.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/memory-game.png",
     name: "JS Memory Game",
     githubLink: "https://github.com/haingo-raz/Javascript-memory-game",
     demoLink: "/",
@@ -384,7 +384,7 @@ export const ProjectList = [
   {
     id: "data-scientist-salary-prediction",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/data-scientist-prediction.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/data-scientist-prediction.png",
     name: "Data Scientist Salary Prediction",
     githubLink: "https://github.com/haingo-raz/Data-Scientist-Salary-Prediction",
     demoLink: "/",
@@ -400,7 +400,7 @@ export const ProjectList = [
         type: "p",
         text: "This project aims to create a machine learning model that predicts a data science practitioner salary based on their job title, experience level, employment type, remote ratio, company size and company location."
       },
-      { 
+      {
         order: 3,
         type: "title",
         text: "Technologies used:"
@@ -459,4 +459,4 @@ export const ProjectList = [
   }
 ];
 
-export const imgPlaceholder = "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/placeholder.png";
+export const imgPlaceholder = "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/placeholder.png";
