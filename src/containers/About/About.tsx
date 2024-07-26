@@ -10,6 +10,17 @@ import { Link } from "react-scroll";
 interface RootProps extends GridProps {}
 
 const Root = styled(Grid)<RootProps>(({ theme }) => ({
+  "@keyframes bounce": {
+    "0%, 20%, 50%, 80%, 100%": {
+      transform: "translateY(0)",
+    },
+    "40%": {
+      transform: "translateY(-30px)",
+    },
+    "60%": {
+      transform: "translateY(-15px)",
+    },
+  },
   ".social-info": {
     minHeight: "100vh",
     background: theme.palette.primary.main,
@@ -39,6 +50,9 @@ const Root = styled(Grid)<RootProps>(({ theme }) => ({
       width: "100%",
     },
   },
+  ".project-btn": {
+    animation: "bounce 2s 2",
+  }
 }));
 
 const About = () => {
@@ -96,7 +110,7 @@ const About = () => {
           <Stack direction="row" spacing={4}>
             {/* <Button variant="outlined">{t("about.job")}</Button> */}
             <Link to="projects" smooth={true}>
-              <Button variant="contained">{t("about.projects")}</Button>   
+              <Button variant="contained" className="project-btn">{t("about.projects")}</Button>   
             </Link>
           </Stack>
         </Stack>
