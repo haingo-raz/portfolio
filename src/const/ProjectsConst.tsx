@@ -1,3 +1,5 @@
+import { text } from "stream/consumers";
+
 export const ProjectList = [
   {
     id: "python-attendance",
@@ -447,6 +449,74 @@ export const ProjectList = [
           "I learned how to deploy a Flask application on Azure App Service.",
           "I improved my data preprocessing skills.",
           "I explored AutoGluon for automated machine learning.",
+        ]
+      },
+    ]
+  },
+  {
+    id: "nodejs-blog",
+    isDisplayed: true,
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/nodejs-blog.png",
+    name: "NodeJS Blog",
+    githubLink: "https://github.com/haingo-raz/Node.js-Blog",
+    demoLink: "/",
+    languages: ["JavaScript", "NodeJS", "Express", "MySQL", "Css"],
+    content: [
+      { 
+        order: 1,
+        type: "title",
+        text: "Detailed project description:"
+      },
+      {
+        order: 2,
+        type: "p",
+        text: "This project is a blog system that allows users to create and read blog posts. It is a simple blog application created using NodeJS, Express, and MySQL."
+      },
+      {
+        order: 3,
+        type: "title",
+        text: "Technologies used:"
+      },
+      { 
+        order: 4,
+        type: "ul",
+        text: [
+          "HTML and CSS for the front end.",
+          "JavaScript for interactivity.",
+          "NodeJS for the backend.",
+          "Express for the server.",
+          "MySQL for the database.",
+        ]
+      },
+      { 
+        order: 5,
+        type: "title",
+        text: "Functionalities:"
+      },
+      { 
+        order: 6,
+        type: "ul",
+        text: [
+          "Users can register or log in to the system.",
+          "User can log out of the system.",
+          "Users can create a blog post.",
+          "Users can read a blog post.",
+          "Users can research a blog post using keywords.",
+          "Users can update their username or email.",
+        ]
+      },
+      { 
+        order: 7,
+        type: "title",
+        text: "Learning outcomes:"
+      },
+      { 
+        order: 8,
+        type: "ul",
+        text: [
+          "I learned about server and client communication.",
+          "I learned how to use MySQL with NodeJS.",
+          "I learned how to use Express to create a server.",
         ]
       },
     ]
