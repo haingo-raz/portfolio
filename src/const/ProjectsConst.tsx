@@ -164,7 +164,7 @@ export const ProjectList = [
     name: "AWS Visualization Dashboard",
     githubLink: "https://github.com/haingo-raz/React-AWS-Visualisation-Website",
     demoLink: "/",
-    languages: ["AWS", "ReactJS", "Scss", "TypeScript", "Python"],
+    languages: ["AWS", "ReactJS", "Node.js", "websocket", "TypeScript", "Python", "Scss"],
     description: "This is a real-time visualization dashboard website that I have created using ReactJS and AWS in my final year at Middlesex University Mauritius.",
     content: [
       { 
@@ -190,9 +190,10 @@ export const ProjectList = [
           "Scss to style the frontend.",
           "Recharts as a React chart library",
           "TypeScript for type safety.",
-          "Python to create a code that splits JSON files into training and test sets.",
+          "Python to create utils.",
           "News API to download articles for sentiment analysis.",
           "balldontlie API to download past NBA team scores.",
+          "Websocket to connect the frontend to the backend.",
           "Amazon DynamoDB as a NoSQL database.",
           "Amazon SageMaker for machine learning predictions.",
           "Amazon Comprehend for sentiment analysis operations.",
@@ -258,7 +259,7 @@ export const ProjectList = [
     name: "GEROBA Master",
     githubLink: "/",
     demoLink: "/",
-    languages: ["ReactJS", "MUI", "Redux"],
+    languages: ["ReactJS", "MUI", "Redux", "PostgreSQL", "Git (Fork)"],
     description: "GEROBA Master is the main product of the Groupe GDS company based in France. I worked on this project with a team of developers in Mauritius, France, and Martinique.",
     content: [
       { 
@@ -282,7 +283,9 @@ export const ProjectList = [
         text: [
           "ReactJS framework to build user interfaces.", 
           "MUI for prebuilt components.", 
-          "Redux for state management."
+          "Redux for state management.",
+          "PostgreSQL for the database.",
+          "Git for version control.",
         ]
       },
       { 
@@ -294,12 +297,13 @@ export const ProjectList = [
         order: 6,
         type: "ul",
         text: [
-          "I learned how to use git.",
+          "I learned how to use git through the Fork software.",
           "I have improved my skills using ReactJS and Scss.",
           "I learned about the MUI library.",
           "I learned about the Open Layers library for dynamic maps.",
           "I learned about Redux for state management.",
-          "I learned how to communicate with supervisors face-to-face and virtually.",
+          "I learned how to write basic queries in PostgreSQL.",
+          "I learned how to communicate with supervisors face-to-face and in virtual settings.",
           "I learned how to work in a team.",
           "I learned how to manage my time and meet deadlines.",
           "I learned how to ask for help when needed.",
