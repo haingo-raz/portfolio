@@ -13,6 +13,9 @@ import { ImGithub, ImLink } from "react-icons/im";
 import { IoDocumentTextSharp } from "react-icons/io5";
 import { imgPlaceholder } from "../const/ProjectsConst";
 import { useTranslation } from "react-i18next";
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize('G-QS5EL5K0C5');
 
 interface ProjectCardProps {
   id: string;
@@ -30,6 +33,33 @@ const Root = styled(Card)<CardProps>(({ theme }) => ({
 
 const ProjectCard = (props: ProjectCardProps) => {
   const { t } = useTranslation();
+  const handleGithubButtonClick = () => {
+    ReactGA.event({
+      category: "Button",
+      action: "Github Button Clicked",
+      label: props.name,
+    });
+    window.open(props.githubLink ?? "", "_blank");
+  };
+
+  const handleDemoButtonClick = () => {
+    ReactGA.event({
+      category: "Button",
+      action: "Demo Button Clicked",
+      label: props.name,
+    });
+    window.open(props.demoLink ?? "", "_blank");
+  };
+
+  const handleDocsButtonClick = () => {
+    ReactGA.event({
+      category: "Button",
+      action: "Docs Button Clicked",
+      label: props.name,
+    });
+    props.onDialogOpen(props.id);
+  };
+
   return (
     <Root>
       <Stack py={1}>
@@ -47,30 +77,29 @@ const ProjectCard = (props: ProjectCardProps) => {
       />
       <CardActions>
         <Stack justifyContent="space-around" direction="row" width={"100%"}>
-          { props.githubLink === "/" ? <></> : 
+          {props.githubLink === "/" ? (
+            <></>
+          ) : (
             <Button
               variant="contained"
-              onClick={() => window.open(props.githubLink ?? "", "_blank")}
+              onClick={handleGithubButtonClick}
               disabled={props.githubLink === "/"}
             >
               <ImGithub /> {t("projects.github")}
             </Button>
-          }
-          { props.demoLink === "/" ?
-            <Button
-              variant="contained"
-              onClick={() => props.onDialogOpen(props.id)}
-            >
+          )}
+          {props.demoLink === "/" ? (
+            <Button variant="contained" onClick={handleDocsButtonClick}>
               <IoDocumentTextSharp /> {t("projects.docs")}{" "}
             </Button>
-            :
+          ) : (
             <Button
               variant="contained"
-              onClick={() => window.open(props.demoLink ?? "", "_blank")}
+              onClick={handleDemoButtonClick}
             >
               <ImLink /> {t("projects.demo")}{" "}
             </Button>
-          }
+          )}
         </Stack>
       </CardActions>
     </Root>
