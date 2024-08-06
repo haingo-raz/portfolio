@@ -65,6 +65,33 @@ const theme = createTheme({
         },
       ],
     },
+    MuiFormControl: {
+      styleOverrides: {
+        root: {
+          background: "white",
+        },
+      },
+    },
+    MuiFormLabel: { 
+      styleOverrides: {
+        root: {
+          color: buttonMainColor,
+          "&.Mui-focused": {
+            color: buttonMainColor,
+            top: -25,
+          },
+        },
+      },
+    },
+    MuiButtonBase: {
+      styleOverrides: {
+        root: {
+          "&.Mui-selected": {
+            backgroundColor: `${secondaryMainColor} !important`,
+          },
+        },
+      },
+    },
   },
   palette: {
     primary: {

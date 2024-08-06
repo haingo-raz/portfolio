@@ -30,6 +30,7 @@ interface ProjectCardProps {
 
 const Root = styled(Card)<CardProps>(({ theme }) => ({
   padding: theme.spacing(1),
+  minWidth: 235
 }));
 
 const ProjectCard = (props: ProjectCardProps) => {
