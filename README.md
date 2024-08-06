@@ -1,3 +1,2 @@
 # About
-
-Portfolio project
+Portfolio website.

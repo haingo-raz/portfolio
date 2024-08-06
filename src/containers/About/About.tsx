@@ -4,13 +4,23 @@ import { type GridProps } from "@mui/material/Grid";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
-import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 
 interface RootProps extends GridProps {}
 
 const Root = styled(Grid)<RootProps>(({ theme }) => ({
+  "@keyframes bounce": {
+    "0%, 20%, 50%, 80%, 100%": {
+      transform: "translateY(0)",
+    },
+    "40%": {
+      transform: "translateY(-30px)",
+    },
+    "60%": {
+      transform: "translateY(-15px)",
+    },
+  },
   ".social-info": {
     minHeight: "100vh",
     background: theme.palette.primary.main,
@@ -23,6 +33,11 @@ const Root = styled(Grid)<RootProps>(({ theme }) => ({
     maxWidth: "45%",
     objectFit: "cover",
     borderRadius: "50%",
+  },
+  ".position": {
+      [theme.breakpoints.down("sm")]: {
+        textAlign: "center",
+      },
   },
   ".description": {
     height: "100vh",
@@ -40,6 +55,9 @@ const Root = styled(Grid)<RootProps>(({ theme }) => ({
       width: "100%",
     },
   },
+  ".project-btn": {
+    animation: "bounce 2s 2",
+  }
 }));
 
 const About = () => {
@@ -53,13 +71,29 @@ const About = () => {
           alignItems="center"
           justifyContent="center"
         >
-          <img src="/imgs/cute.png" alt="avatar" />
+          {/* <img src="/imgs/cute.png" alt="avatar" /> */}
           <Typography variant="h1">{t("about.name")}</Typography>
-          <Typography variant="h2">{t("about.position")}</Typography>
+          <Typography variant="h2" className="position">{t("about.position")}</Typography>
           <Stack direction="row" spacing={4} className="social-links">
-            <LinkedInIcon />
-            <GitHubIcon />
-            <EmailIcon />
+            <Button
+              variant="text"
+              onClick={() => window.open(`${t("about.linkedin")}`, "_blank")}
+            >
+              <LinkedInIcon />
+            </Button>
+            <Button
+              variant="text"
+              onClick={() => window.open(`${t("about.github")}`, "_blank")}
+            >
+              <GitHubIcon />
+            </Button>
+            <Button
+              variant="text"
+              href={`mailto:${t("about.mailto")}`}
+              target="_blank"
+            >
+              <EmailIcon />
+            </Button>
           </Stack>
         </Stack>
       </Grid>
@@ -79,13 +113,10 @@ const About = () => {
             {t("about.description")}
           </Typography>
           <Stack direction="row" spacing={4}>
-            <Button variant="contained">
-              <Link to="projects" smooth={true}>
-                {t("about.projects")}
-              </Link>{" "}
-              &nbsp;
-              <KeyboardDoubleArrowDownIcon />
-            </Button>
+            {/* <Button variant="outlined">{t("about.job")}</Button> */}
+            <Link to="projects" smooth={true}>
+              <Button variant="contained" className="project-btn">{t("about.projects")}</Button>   
+            </Link>
           </Stack>
         </Stack>
       </Grid>

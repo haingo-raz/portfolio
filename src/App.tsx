@@ -9,6 +9,9 @@ import "./App.scss";
 import { Link } from "react-scroll";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import { type GridProps } from "@mui/material/Grid";
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize('G-QS5EL5K0C5');
 
 interface RootProps extends GridProps {}
 
@@ -38,6 +41,12 @@ function App() {
       }
     });
   }, []);
+
+  ReactGA.send({
+    hitType: "pageview",
+    page: "/",
+    title: "Haingo's portfolio"
+  })
 
   return (
     <ThemeProvider theme={theme}>

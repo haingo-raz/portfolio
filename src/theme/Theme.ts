@@ -16,8 +16,8 @@ const theme = createTheme({
       fontSize: "2em",
     },
     h5: {
-      fontSize: "1em",
-      fontWeight: 500,
+      fontSize: "1.2em",
+      fontWeight: 600,
     },
   },
   components: {
@@ -42,6 +42,18 @@ const theme = createTheme({
           },
         },
         {
+          props: { variant: "outlined", color: "primary" },
+          style: {
+            background: buttonHoverColor,
+            color: buttonTextHoverColor,
+            "&:hover": {
+              background: buttonMainColor,
+              color: buttonTextColor,
+              animation: "gelatine 1s ease-in",
+            },
+          },
+        },
+        {
           props: { variant: "text", color: "primary" },
           style: {
             color: buttonMainColor,
@@ -52,6 +64,33 @@ const theme = createTheme({
           },
         },
       ],
+    },
+    MuiFormControl: {
+      styleOverrides: {
+        root: {
+          background: "white",
+        },
+      },
+    },
+    MuiFormLabel: { 
+      styleOverrides: {
+        root: {
+          color: buttonMainColor,
+          "&.Mui-focused": {
+            color: buttonMainColor,
+            top: -25,
+          },
+        },
+      },
+    },
+    MuiButtonBase: {
+      styleOverrides: {
+        root: {
+          "&.Mui-selected": {
+            backgroundColor: `${secondaryMainColor} !important`,
+          },
+        },
+      },
     },
   },
   palette: {

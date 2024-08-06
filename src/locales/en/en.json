@@ -1,15 +1,19 @@
 {
   "about": {
     "name": "Haingo Razafindranto",
-    "position": "Software Developer",
+    "position": "Aspiring AI software engineer",
+    "linkedin": "https://www.linkedin.com/in/haingo-razafindranto/",
+    "github": "https://github.com/haingo-raz?tab=repositories",
+    "mailto": "haingo.alicia@gmail.com",
     "title": "About me",
-    "description": "Hello, I'm Haingo, an IT enthusiast who graduated in July 2023. My journey in the tech world began even before graduation as I delved into part-time work experiences starting in August 2022. These early ventures provided me with invaluable real-world exposure and practical skills, shaping my understanding of the industry. Now, equipped with a solid foundation from my academic pursuits, I'm looking forward to furthering my studies while continuing to explore and contribute to the dynamic field of technology. Within this portfolio, you'll find a selection of projects that showcase my passion, skills, and dedication.",
-    "projects": "Projects"
+    "description": "Hello, I'm Haingo. I am student with IT background, currently expanding my knowledge in AI and Cloud Computing.",
+    "projects": "View my projects"
   },
   "projects": {
     "title": "Projects I've worked on",
     "github": "Github",
     "demo": "Demo",
+    "docs": "Docs",
     "otherProjects": "View other projects"
   }
 }
