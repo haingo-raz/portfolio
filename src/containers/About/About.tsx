@@ -34,6 +34,11 @@ const Root = styled(Grid)<RootProps>(({ theme }) => ({
     objectFit: "cover",
     borderRadius: "50%",
   },
+  ".position": {
+      [theme.breakpoints.down("sm")]: {
+        textAlign: "center",
+      },
+  },
   ".description": {
     height: "100vh",
     background: theme.palette.secondary.main,
@@ -68,7 +73,7 @@ const About = () => {
         >
           {/* <img src="/imgs/cute.png" alt="avatar" /> */}
           <Typography variant="h1">{t("about.name")}</Typography>
-          <Typography variant="h2">{t("about.position")}</Typography>
+          <Typography variant="h2" className="position">{t("about.position")}</Typography>
           <Stack direction="row" spacing={4} className="social-links">
             <Button
               variant="text"

@@ -26,7 +26,7 @@ interface MultipleSelectChipProps {
 export default function MultipleSelectChip(props: MultipleSelectChipProps) {
   return (
     <div>
-      <FormControl variant="filled" sx={{ m:1.5, width: 350 }}>
+      <FormControl variant="filled" sx={{ m:1.5, width: { sm: 350, xs: 275 } }}>
         <InputLabel id="chip-label">Filter by technology/tool</InputLabel>
         <Select
           labelId="chip-label"

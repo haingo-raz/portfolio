@@ -454,7 +454,7 @@ export const ProjectList = [
   {
     id: "Node.js-blog",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/Node.js-blog.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/nodejs-blog.png",
     name: "Node.js Blog",
     githubLink: "https://github.com/haingo-raz/Node.js-Blog",
     demoLink: "/",

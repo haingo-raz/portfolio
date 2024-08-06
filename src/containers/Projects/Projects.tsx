@@ -22,7 +22,16 @@ const Root = styled(Box)<RootProps>(({ theme }) => ({
   ".pj-container": {
     width: "fit-content",
     marginBottom: theme.spacing(2),
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: "100vw",
+    },
   },
+  ".pj-item": {
+    [theme.breakpoints.down("sm")]: {
+      paddingLeft: `${theme.spacing(2)} important!`,
+      padding: theme.spacing(2)
+    },
+  }
 }));
 
 function Projects() {
@@ -72,7 +81,7 @@ function Projects() {
         >
           {ProjectList.filter(project => project.isDisplayed && (chipNameValue.length === 0 || chipNameValue.some(chip => project.languages.includes(chip)))).map((project, index) => {
             return (
-              <Grid item xs={12} sm={6} md={4} key={index}>
+              <Grid item xs={12} sm={6} md={4} key={index} className="pj-item">
                 <ProjectCard
                   id={project.id}
                   languages={project.languages}
