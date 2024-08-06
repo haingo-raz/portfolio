@@ -1,5 +1,3 @@
-import { text } from "stream/consumers";
-
 export const ProjectList = [
   {
     id: "python-attendance",
@@ -8,7 +6,7 @@ export const ProjectList = [
     name: "AWS Python Attendance System",
     githubLink: "https://github.com/haingo-raz/AWS-face-recognition-system",
     demoLink: "/",
-    languages: ["Python", "AWS", "Scss", "JavaScript"],
+    languages: ["Python", "AWS", "Scss", "HTML", "JavaScript"],
     description: "This is a face recognition system I have created using Python Flask and AWS as part of my undergraduate project at Middlesex University Mauritius.",
     content: [
       { 
@@ -84,8 +82,8 @@ export const ProjectList = [
     name: "Java Web Scrapping",
     githubLink: "https://github.com/haingo-raz/Java-web-scraping",
     demoLink: "/",
-    languages: ["Java", "JavaScript", "NodeJS", "SQL", "Css"],
-    description: "This is a web scraping project I have created using Java, JavaScript, NodeJS and SQL as part of my undergraduate project at Middlesex University Mauritius.",
+    languages: ["Java", "JavaScript", "Node.js", "MySQL", "CSS", "HTML"],
+    description: "This is a web scraping project I have created using Java, JavaScript, Node.js and MySQL as part of my undergraduate project at Middlesex University Mauritius.",
     content: [
       { 
         order: 1,
@@ -95,7 +93,7 @@ export const ProjectList = [
       {
         order: 2,
         type: "p",
-        text: "This project is a web scraping system that scrapes data from multiple e-ommerce websites using Java, process and store data in a SQL database, and display the data on a website using JavaScript and NodeJS."
+        text: "This project is a web scraping system that scrapes data from multiple e-ommerce websites using Java, process and store data in a MySQL database, and display the data on a website using JavaScript and Node.js."
       },
       { 
         order: 3,
@@ -111,9 +109,9 @@ export const ProjectList = [
           "Java Threads for parallel processing.",
           "Java Maven to manage dependencies.",
           "Java Spring to connect the beans (classes).",
-          "Java Hibernate to map between Java classes and SQL tables.",
+          "Java Hibernate to map between Java classes and MySQL tables.",
           "HTML, CSS and JavaScript for the front end.",
-          "NodeJS and Express for the back end to handle requests",
+          "Node.js and Express for the back end to handle requests",
         ]
       },
       { 
@@ -128,7 +126,7 @@ export const ProjectList = [
           "Users can search for a laptop.",
           "Users can click on a laptop to see more details.",
           "The system can scrap laptops data from multiple e-commerce websites.",
-          "The system can store the scrapped data in a SQL database.",
+          "The system can store the scrapped data in a MySQL database.",
           "The system can compare the prices of laptops from different websites.",
         ]
       },
@@ -166,8 +164,8 @@ export const ProjectList = [
     name: "AWS Visualization Dashboard",
     githubLink: "https://github.com/haingo-raz/React-AWS-Visualisation-Website",
     demoLink: "/",
-    languages: ["AWS", "ReactJS", "Node.js", "websocket", "TypeScript", "Python", "Scss"],
-    description: "This is a real-time visualization dashboard website that I have created using ReactJS and AWS in my final year at Middlesex University Mauritius.",
+    languages: ["AWS", "React.js", "Node.js", "Websocket", "TypeScript", "Python", "Scss", "HTML"],
+    description: "This is a real-time visualization dashboard website that I have created using React.js and AWS in my final year at Middlesex University Mauritius.",
     content: [
       { 
         order: 1,
@@ -188,7 +186,7 @@ export const ProjectList = [
         order: 4,
         type: "ul",
         text: [
-          "ReactJS as the frontend framework.",
+          "React.js as the frontend framework.",
           "Scss to style the frontend.",
           "Recharts as a React chart library",
           "TypeScript for type safety.",
@@ -243,7 +241,7 @@ export const ProjectList = [
     name: "Portfolio",
     githubLink: "/",
     demoLink: "https://haingo-raz.github.io/portfolio/",
-    languages: ["TypeScript", "ReactJS", "MUI", "Scss"],
+    languages: ["TypeScript", "React.js", "MUI", "Scss"],
   },
   {
     id: "geroba",
@@ -252,7 +250,7 @@ export const ProjectList = [
     name: "GEROBA",
     githubLink: "/",
     demoLink: "https://geroba.fr",
-    languages: ["ReactJS", "Scss"],
+    languages: ["React.js", "Scss"],
   },
   {
     id: "gerobamaster",
@@ -261,7 +259,7 @@ export const ProjectList = [
     name: "GEROBA Master",
     githubLink: "/",
     demoLink: "/",
-    languages: ["ReactJS", "MUI", "Redux", "PostgreSQL", "Git (Fork)"],
+    languages: ["React.js", "MUI", "Redux", "PostgreSQL", "Git (Fork)"],
     description: "GEROBA Master is the main product of the Groupe GDS company based in France. I worked on this project with a team of developers in Mauritius, France, and Martinique.",
     content: [
       { 
@@ -283,7 +281,7 @@ export const ProjectList = [
         order: 4,
         type: "ul",
         text: [
-          "ReactJS framework to build user interfaces.", 
+          "React.js framework to build user interfaces.", 
           "MUI for prebuilt components.", 
           "Redux for state management.",
           "PostgreSQL for the database.",
@@ -300,7 +298,7 @@ export const ProjectList = [
         type: "ul",
         text: [
           "I learned how to use git through the Fork software.",
-          "I have improved my skills using ReactJS and Scss.",
+          "I have improved my skills using React.js and Scss.",
           "I learned about the MUI library.",
           "I learned about the Open Layers library for dynamic maps.",
           "I learned about Redux for state management.",
@@ -320,7 +318,7 @@ export const ProjectList = [
     name: "React Quiz App",
     githubLink: "https://github.com/haingo-raz/React-quiz-app",
     demoLink: "https://simple-math-app.netlify.app/",
-    languages: ["ReactJS", "Scss"],
+    languages: ["React.js", "Scss"],
   },
   {
     id: "javascript-memory-game",
@@ -329,7 +327,7 @@ export const ProjectList = [
     name: "JS Memory Game",
     githubLink: "https://github.com/haingo-raz/Javascript-memory-game",
     demoLink: "/",
-    languages: ["PHP", "JavaScript", "Css", "HTML"],
+    languages: ["PHP", "JavaScript", "CSS", "HTML"],
     description: "This is a memory game I have created using JavaScript, PHP, HTML and CSS in my second year at Middlesex University.",
     content: [
       { 
@@ -454,13 +452,13 @@ export const ProjectList = [
     ]
   },
   {
-    id: "nodejs-blog",
+    id: "Node.js-blog",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/nodejs-blog.png",
-    name: "NodeJS Blog",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/Node.js-blog.png",
+    name: "Node.js Blog",
     githubLink: "https://github.com/haingo-raz/Node.js-Blog",
     demoLink: "/",
-    languages: ["JavaScript", "NodeJS", "Express", "MySQL", "Css"],
+    languages: ["JavaScript", "Node.js", "Express", "MySQL", "CSS", "HTML"],
     content: [
       { 
         order: 1,
@@ -470,7 +468,7 @@ export const ProjectList = [
       {
         order: 2,
         type: "p",
-        text: "This project is a blog system that allows users to create and read blog posts. It is a simple blog application created using NodeJS, Express, and MySQL."
+        text: "This project is a blog system that allows users to create and read blog posts. It is a simple blog application created using Node.js, Express, and MySQL."
       },
       {
         order: 3,
@@ -483,7 +481,7 @@ export const ProjectList = [
         text: [
           "HTML and CSS for the front end.",
           "JavaScript for interactivity.",
-          "NodeJS for the backend.",
+          "Node.js for the backend.",
           "Express for the server.",
           "MySQL for the database.",
         ]
@@ -515,7 +513,7 @@ export const ProjectList = [
         type: "ul",
         text: [
           "I learned about server and client communication.",
-          "I learned how to use MySQL with NodeJS.",
+          "I learned how to use MySQL with Node.js.",
           "I learned how to use Express to create a server.",
         ]
       },
@@ -528,7 +526,7 @@ export const ProjectList = [
     name: "",
     githubLink: "/",
     demoLink: "/",
-    languages: ["AWS", "ReactJS", "Scss", "TypeScript", "Python"],
+    languages: ["AWS", "React.js", "Scss", "TypeScript", "Python"],
     description: ""
   }
 ];

@@ -14,6 +14,7 @@ import { IoDocumentTextSharp } from "react-icons/io5";
 import { imgPlaceholder } from "../const/ProjectsConst";
 import { useTranslation } from "react-i18next";
 import ReactGA from 'react-ga4';
+import chip_color from "../const/ChipColor";
 
 ReactGA.initialize('G-QS5EL5K0C5');
 
@@ -67,7 +68,13 @@ const ProjectCard = (props: ProjectCardProps) => {
       </Stack>
       <Stack direction="row" spacing={2} sx={{ overflowX: "auto" }}>
         {props.languages.map((language, index) => {
-          return <Chip key={index} label={language} />;
+          return (
+            <Chip
+              key={index}
+              label={language}
+              style={{ backgroundColor: chip_color[language] ?? chip_color["Default"] }}
+            />
+          );
         })}
       </Stack>
       <CardMedia
