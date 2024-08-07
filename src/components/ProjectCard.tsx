@@ -67,7 +67,7 @@ const ProjectCard = (props: ProjectCardProps) => {
       <Stack py={1}>
         <Typography variant="h5">{props.name}</Typography>
       </Stack>
-      <Stack direction="row" spacing={2} sx={{ overflowX: "auto" }}>
+      <Stack direction="row" spacing={2} sx={{ overflowX: "auto", minHeight: 48 }}>
         {props.languages.map((language, index) => {
           return (
             <Chip
