@@ -6,7 +6,7 @@ export const ProjectList = [
     name: "AWS Python Attendance System",
     githubLink: "https://github.com/haingo-raz/AWS-face-recognition-system",
     demoLink: "/",
-    languages: ["Python", "AWS", "Scss", "HTML", "JavaScript"],
+    languages: ["Python", "AWS", "SCSS", "HTML", "JavaScript"],
     description: "This is a face recognition system I have created using Python Flask and AWS as part of my undergraduate project at Middlesex University Mauritius.",
     content: [
       { 
@@ -164,7 +164,7 @@ export const ProjectList = [
     name: "AWS Visualization Dashboard",
     githubLink: "https://github.com/haingo-raz/React-AWS-Visualisation-Website",
     demoLink: "/",
-    languages: ["AWS", "React.js", "Node.js", "Websocket", "TypeScript", "Python", "Scss", "HTML"],
+    languages: ["AWS", "React.js", "Node.js", "Websocket", "TypeScript", "Python", "SCSS", "HTML"],
     description: "This is a real-time visualization dashboard website that I have created using React.js and AWS in my final year at Middlesex University Mauritius.",
     content: [
       { 
@@ -187,7 +187,7 @@ export const ProjectList = [
         type: "ul",
         text: [
           "React.js as the frontend framework.",
-          "Scss to style the frontend.",
+          "SCSS to style the frontend.",
           "Recharts as a React chart library",
           "TypeScript for type safety.",
           "Python to create utils.",
@@ -241,7 +241,7 @@ export const ProjectList = [
     name: "Portfolio",
     githubLink: "/",
     demoLink: "https://haingo-raz.github.io/portfolio/",
-    languages: ["TypeScript", "React.js", "MUI", "Scss"],
+    languages: ["TypeScript", "React.js", "MUI", "SCSS"],
   },
   {
     id: "geroba",
@@ -250,7 +250,7 @@ export const ProjectList = [
     name: "GEROBA",
     githubLink: "/",
     demoLink: "https://geroba.fr",
-    languages: ["React.js", "Scss"],
+    languages: ["React.js", "SCSS"],
   },
   {
     id: "gerobamaster",
@@ -298,7 +298,7 @@ export const ProjectList = [
         type: "ul",
         text: [
           "I learned how to use git through the Fork software.",
-          "I have improved my skills using React.js and Scss.",
+          "I have improved my skills using React.js and SCSS.",
           "I learned about the MUI library.",
           "I learned about the Open Layers library for dynamic maps.",
           "I learned about Redux for state management.",
@@ -318,7 +318,7 @@ export const ProjectList = [
     name: "React Quiz App",
     githubLink: "https://github.com/haingo-raz/React-quiz-app",
     demoLink: "https://simple-math-app.netlify.app/",
-    languages: ["React.js", "Scss"],
+    languages: ["React.js", "SCSS"],
   },
   {
     id: "javascript-memory-game",
@@ -520,13 +520,80 @@ export const ProjectList = [
     ]
   },
   {
+    id: "MyJourney",
+    isDisplayed: true,
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/myjourney.png",
+    name: "MyJourney workout management app",
+    githubLink: "https://github.com/haingo-raz/MyJourney",
+    demoLink: "/",
+    languages: ["React.js", "Node.js", "Express", "MySQL", "SCSS"],
+    content: [
+      { 
+        order: 1,
+        type: "title",
+        text: "Detailed project description:"
+      },
+      {
+        order: 2,
+        type: "p",
+        text: "This project is a workout management app built with React.js, Node.js, Express and MySQL."
+      },
+      {
+        order: 3,
+        type: "title",
+        text: "Technologies used:"
+      },
+      { 
+        order: 4,
+        type: "ul",
+        text: [
+          "React.js and SCSS.",
+          "Node.js for the backend.",
+          "Express for the server.",
+          "MySQL for the database.",
+        ]
+      },
+      { 
+        order: 5,
+        type: "title",
+        text: "Functionalities:"
+      },
+      { 
+        order: 6,
+        type: "ul",
+        text: [
+          "Users can register or log in to the system.",
+          "Users can log out of the system.",
+          "Users can delete their account.",
+          "Users can create a workout program.",
+          "Users can update a workout instance.",
+          "Users can delete a workout instance.",
+          "Users can update their email and password.",
+          "Users can access their past workout programs.",
+        ]
+      },
+      { 
+        order: 7,
+        type: "title",
+        text: "Learning outcomes:"
+      },
+      { 
+        order: 8,
+        type: "ul",
+        text: [
+          "I practiced request management between React.js and Node.js/Express.",
+        ]
+      },
+    ]
+  },
+  {
     id: "empty",
     isDisplayed: false,
     imgPath: "",
     name: "",
     githubLink: "/",
     demoLink: "/",
-    languages: ["AWS", "React.js", "Scss", "TypeScript", "Python"],
+    languages: ["AWS", "React.js", "SCSS", "TypeScript", "Python"],
     description: ""
   }
 ];
