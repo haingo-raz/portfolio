@@ -522,7 +522,7 @@ export const ProjectList = [
   {
     id: "MyJourney",
     isDisplayed: true,
-    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/public/imgs/thumbnail/myjourney.png",
+    imgPath: "https://raw.githubusercontent.com/haingo-raz/portfolio/main/imgs/thumbnail/myjourney.png",
     name: "MyJourney workout management app",
     githubLink: "https://github.com/haingo-raz/MyJourney",
     demoLink: "/",
